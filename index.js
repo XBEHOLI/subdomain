@@ -14,6 +14,10 @@ app.get('/auth', (req, res) => {
     res.send('Поддомен: ' + req.subdomain);
 })
 
-app.listen(8080, () => {
-    console.log('Started...');
+app.get('/', (req, res) => {
+	res.send('<h1>Node application</h1>')
+})
+
+app.listen(5000, () => {
+	console.log('App listening on port 5000')
 })
