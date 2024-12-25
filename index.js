@@ -14,6 +14,6 @@ app.get('/auth', (req, res) => {
     res.send('Поддомен: ' + req.subdomain);
 })
 
-app.listen(3000, () => {
+app.listen(8080, () => {
     console.log('Started...');
 })
